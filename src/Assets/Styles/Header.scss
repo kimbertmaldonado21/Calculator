@@ -1,7 +1,16 @@
 .Header{
-    height: 100px;
-    width: 100%;
-    background-color: blue;
+    height: 75px;
     border-bottom: 1px solid red;
     margin-bottom: 1px;
+    ul li{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px 50px 0px 25px;
+        font: bold 23px "Times new Roman";
+    }
+    
+    ul li:hover{
+        color: red;
+        cursor: pointer;
+    }
 }

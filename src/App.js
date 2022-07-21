@@ -1,24 +1,22 @@
 import React from "react";
 import Header from "./Layouts/Header/index";
-import Sidebar from "./Layouts/Sidebar/index";
-import Footer from "./Layouts/Footer/index";
 
+import Footer from "./Layouts/Footer/index";
+import Content from "./Layouts/Content/index";
 function App() {
   return (
     <div className="App">
-      <nav className="Header  main-header navbar-expand navbar-white navbar-light">
+       {/* Navbar */}
+      <nav class="Header main-header navbar navbar-expand navbar-white navbar-light">
         <Header />
       </nav>
-
-      <div className="Sidebar sidebar os-host os-theme-light os-host-overflow os-host-overflow-y os-host-resize-disabled os-host-transition os-host-scrollbar-horizontal-hidden">
-        <Sidebar />
+  
+      {/* main-wrapper*/}
+      <div className="content-wrapper">
+        <Content />
       </div>
-
-      {/* <div className="content-wrapper">
-        <section className="content">
-          qwe
-        </section>
-      </div> */}
+      
+     {/* Footer */}
       <footer className="main-footer">
         <Footer />
       </footer>

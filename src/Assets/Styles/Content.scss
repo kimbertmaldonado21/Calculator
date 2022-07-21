@@ -1,11 +1,26 @@
 .content-wrapper{
     min-height: 583px;
-    background-color: brown;
 
     .Content{
         height: auto;
-        background-color: brown;
-        border-bottom: 1px solid red;
-        margin-bottom: 1px;
+        display: grid;
+        
+    }
+    .Card{
+        width: 400px;
+        
+        .card-body-row{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 40px calc((100% - (255px * 3)) / 2);
+            justify-content: center;
+        }
+        .card-body-row button{
+            height: 50px;
+            flex: 0 0 215px;
+            margin: 1em 20px;
+            border: 2px blue solid;
+        }
+        
     }
 }
