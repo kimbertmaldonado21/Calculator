@@ -1,0 +1,11 @@
+.content-wrapper{
+    min-height: 583px;
+    background-color: brown;
+
+    .Content{
+        height: auto;
+        background-color: brown;
+        border-bottom: 1px solid red;
+        margin-bottom: 1px;
+    }
+}

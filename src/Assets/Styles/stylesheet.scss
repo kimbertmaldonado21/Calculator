@@ -7,5 +7,7 @@ body {
   .App{
     height: 100vh;
     @import './Header.scss';
+    @import './Sidebar.scss';
+    @import './Content.scss';
   }
 }
