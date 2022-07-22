@@ -1,9 +1,10 @@
-import React from "react";
+import React, {useState} from "react";
 import Header from "./Layouts/Header/index";
 
 import Footer from "./Layouts/Footer/index";
 import Content from "./Layouts/Content/index";
 function App() {
+  const [num, setNum] = useState("");
   return (
     <div className="App">
        {/* Navbar */}
@@ -13,7 +14,7 @@ function App() {
   
       {/* main-wrapper*/}
       <div className="content-wrapper">
-        <Content />
+        <Content  />
       </div>
       
      {/* Footer */}

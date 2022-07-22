@@ -1,26 +1,59 @@
 .content-wrapper{
     min-height: 583px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    .Content{
-        height: auto;
-        display: grid;
-        
+    .calculator{
+        width: 100%;
+        max-width: 400px;
+        background-color: #fff;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0px 2px 64px rgba(0, 0, 0, 0.2);
+
+        .display{
+            padding: 15px;
+            text-align: right;
+            background-color: var(--primary);
+            color: var(--light);
+            font-size: 24px;
+            font-weight: 300;
+            border-bottom: 1px solid var(--primary);
+            box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+        }
+        button{
+            appearance: none;
+            border: none;
+            outline: none;
+            color: #fff;
+            font-size: 35px;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+        button:hover{
+            opacity: 70%;
+            background-color: var(--primary);
+            color: var(--dark);
+        }
     }
-    .Card{
-        width: 400px;
-        
-        .card-body-row{
-            display: flex;
-            flex-wrap: wrap;
-            padding: 40px calc((100% - (255px * 3)) / 2);
-            justify-content: center;
-        }
-        .card-body-row button{
-            height: 50px;
-            flex: 0 0 215px;
-            margin: 1em 20px;
-            border: 2px blue solid;
-        }
-        
+    .operators{
+        display: flex;
+    }
+    .operators button{
+        flex: 1 1 0%;
+        background-color: var(--dark);
+        font-weight: 700;
+    }
+    .digits{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .digits button{
+        flex: 1 1 33.333%;
+        max-width: 33.33% ;
+        background-color: var(--primary);
+        font-weight: 700;
     }
 }

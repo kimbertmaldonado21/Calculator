@@ -1,9 +1,17 @@
-$color: white;
+:root{
+  --primary : #05B505;
+  --secondary : #d81e5b;
+  --dark : #131a26;
+  --light : #eee;
+}
+$color: var(--light);
 
 body {
   background-color: $color;
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+  font-family: 'Fira Sans', sans-serif;
   .App{
     height: 100vh;
     @import './Header.scss';
